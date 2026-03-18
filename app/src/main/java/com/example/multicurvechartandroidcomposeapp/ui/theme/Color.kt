@@ -1,4 +1,4 @@
-package com.example.testcharts.ui.theme
+package com.example.multicurvechartandroidcomposeapp.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

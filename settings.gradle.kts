@@ -23,5 +23,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "TestCharts"
+rootProject.name = "MultiCurveChartAndroidComposeApp"
 include(":app")

@@ -1,4 +1,4 @@
-package com.example.testcharts
+package com.example.multicurvechartandroidcomposeapp
 
 import org.junit.Test
 

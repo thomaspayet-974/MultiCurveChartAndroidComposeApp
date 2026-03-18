@@ -1,4 +1,4 @@
-package com.example.testcharts
+package com.example.multicurvechartandroidcomposeapp
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -19,14 +19,14 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.testcharts.ui.theme.TestChartsTheme
+import com.example.multicurvechartandroidcomposeapp.ui.theme.MultiCurveChartAndroidComposeAppTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            TestChartsTheme {
+            MultiCurveChartAndroidComposeAppTheme {
                 Column(
                     modifier = Modifier.padding(16.dp),
                     verticalArrangement = Arrangement.Center,
@@ -69,7 +69,7 @@ fun ChartScreen() {
 @Preview
 @Composable
 private fun ChartScreenPreview() {
-    TestChartsTheme {
+    MultiCurveChartAndroidComposeAppTheme {
         ChartScreen()
     }
 }
