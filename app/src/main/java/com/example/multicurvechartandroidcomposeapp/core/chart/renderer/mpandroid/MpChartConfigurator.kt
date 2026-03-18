@@ -79,7 +79,7 @@ fun LineChart.setupChart(
     extraTopOffset = 12f
     extraBottomOffset = 8f
 
-    setVisibleXRangeMinimum(20f)
+    setVisibleXRangeMinimum(40f)
 
     onChartGestureListener = object : OnChartGestureListener {
         override fun onChartGestureStart(
@@ -117,6 +117,12 @@ fun LineChart.setupChart(
         }
 
         override fun onChartScale(me: android.view.MotionEvent?, scaleX: Float, scaleY: Float) {
+            val low = lowestVisibleX
+            val high = highestVisibleX
+
+            if (high - low <= 40f) {
+                moveViewToX(low)
+            }
             enforceHorizontalOnlyViewport()
             setReducedSeries(series)
             updateVisibleYRange()

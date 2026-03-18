@@ -49,7 +49,7 @@ fun MPAndroidMultiCurveChart(
             update = { chart ->
                 chart.fitScreen()
                 chart.setReducedSeries(series)
-                chart.setVisibleXRangeMinimum(20f)
+                chart.setVisibleXRangeMinimum(40f)
                 chart.moveViewToX(series.firstOrNull()?.points?.firstOrNull()?.x?.toFloat() ?: 0f)
                 chart.updateVisibleYRange()
                 chart.invalidate()
